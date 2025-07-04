@@ -42,13 +42,18 @@ h3 {
 }
 
 .fixed{
-    background-color: red;
-    border-radius: 40px;
-    display: inline;
+    background: #dc3545;
+    display: flex;
     position: fixed;
-    top:90%;
-    left: 90%;
-    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 12px;
 }
 
 header{
@@ -154,6 +159,7 @@ header{
     background: #e9ecef;
     border-radius: 10px;
     margin: 20px 0;
+    position: relative;
 }
 
 .relative{
@@ -161,7 +167,10 @@ header{
 }
 
 .absolute{
+    background:#28a745;
     position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 
