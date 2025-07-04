@@ -41,6 +41,16 @@ h3 {
     unicode-bidi: isolate;
 }
 
+.fixed{
+    background-color: red;
+    border-radius: 40px;
+    display: inline;
+    position: fixed;
+    top:90%;
+    left: 90%;
+    z-index: 1;
+}
+
 header{
     background-color: white;
     border-radius: 15px;
@@ -65,7 +75,7 @@ header{
     margin: 20px 0;
 }
 
-.grid-item{
+.base-item{
     background: linear-gradient(45deg, #ff6b6b, #feca57);
     color: white;
     padding: 20px;
@@ -104,6 +114,55 @@ header{
     grid-area: 2/2/4/2; background: #45b7d1;
 }
 
+.flex-base{
+    flex-wrap: wrap;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.flex-advanced{
+    display: flex;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    justify-content:space-between;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.flexy{
+    flex: 1;
+    min-width: 150px;
+}
+
+.flex-advanced2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sticky{
+    background: #17a2b8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.relative-container{
+    height: 300px;
+    background: #e9ecef;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
 
 
 
