@@ -160,13 +160,9 @@
         </section>
 
         <section class="section">
-
+            <h2 class="title">📝 Form & Input Practice</h2>
             <div class="form-container">
-
-                <h2 class="title">📝 Form & Input Practice</h2>
-
                 <div class="form-grid">
-
                     <div>
                         <h3>Text Inputs</h3>
 
@@ -177,14 +173,12 @@
 
                         <div class="base-input">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="user-input input-positive"
-                                placeholder="your@email.com" value="john@example.com">
+                            <input type="email" id="email" class="user-input input-positive"placeholder="your@email.com" value="john@example.com">
                         </div>
 
                         <div class="base-input">
                             <label for="password">Password<label>
-                                    <input type="password" id="password" class="user-input input-negative"
-                                        placeholder="Enter password">
+                            <input type="password" id="password" class="user-input input-negative" placeholder="Enter password">
                         </div>
 
                         <div class="base-input">
@@ -213,26 +207,27 @@
 
                         <div class="base-input">
                             <label>Preferred Contact Method</label>
+                            <div class ="radio-container">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio-email" name="contact" value="email" class="styled-radio">
+                                    <label for="radio-email">Email</label>
+                                </div>
+                                
+                                <div class="radio-item">
+                                    <input type="radio" id="radio-phone" name="contact" value="phone" class="styled-radio">
+                                    <label for="radio-phone">Phone</label>
+                                </div>
 
-                            <div class="radio-item">
-                                <input type="radio" id="email" name="contact" value="email">
-                                <label for="email">Email</label>
-                            </div>
-
-                            <div class="radio-item">
-                                <input type="radio" id="phone" name="contact" value="phone">
-                                <label for="phone">Phone</label>
-                            </div>
-
-                            <div class="radio-item">
-                                <input type="radio" id="sms" name="contact" value="sms">
-                                <label for="sms">SMS</label>
+                                <div class="radio-item">
+                                    <input type="radio" id="radio-sms" name="contact" value="sms" class="styled-radio">
+                                    <label for="radio-sms">SMS</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="base-input">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="styled-checkbox" value="newsletter">
                                 <label for="newsletter"> Subscribe to newsletter</label><br>
                             </div>
                             <div class="checkbox-item">
@@ -246,22 +241,24 @@
                 <div class="base-input">
                     <label for="message">Message</label>
                     <div class="textarea-container">
-                        <textarea id="message" class="styled-textarea"
+                        <textarea id="message" class="user-input styled-textarea"
                             placeholder="Enter your message here..."></textarea>
                     </div>
                 </div>
 
                 <div class="base-input">
                     <label for="date">Date</label>
-                    <input type="date" id="date" name="date" class="styled-date">
+                    <input type="date" id="date" name="date" class="user-input styled-date">
                 </div>
 
-                <div class="range-slider">
-                    <label for="range">Ragnge Slider</label>
-                    <input type="rae" min="0" max="100" value="50" class="slider" id="range">
+                <div class="base-input">
+                    <label for="range">Range Slider</label>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="range">
                 </div>
             </div>
         </section>
+
+        
     </div>
 </body>
 
