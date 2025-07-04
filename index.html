@@ -165,82 +165,85 @@
 
                 <h2 class="title">📝 Form & Input Practice</h2>
 
-                <div class="text-inputs">
-                    <h3>Text Inputs</h3>
+                <div class="form-grid">
 
-                    <div class="base-input">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" class="user-input" placeholder="Enter your full name">
+                    <div>
+                        <h3>Text Inputs</h3>
+
+                        <div class="base-input">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" class="user-input" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="base-input">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="user-input input-positive"
+                                placeholder="your@email.com" value="john@example.com">
+                        </div>
+
+                        <div class="base-input">
+                            <label for="password">Password<label>
+                                    <input type="password" id="password" class="user-input input-negative"
+                                        placeholder="Enter password">
+                        </div>
+
+                        <div class="base-input">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="user-input" placeholder="+1 (555) 123-4567">
+                        </div>
+
                     </div>
 
-                    <div class="base-input">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" class="user-input input-positive" placeholder="your@email.com"
-                            value="john@example.com">
-                    </div>
+                    <div>
+                        <h3>Select & Options</h3>
 
-                    <div class="base-input">
-                        <label for="password">Password<label>
-                                <input type="password" id="password" class="user-input input-negative"
-                                    placeholder="Enter password">
-                    </div>
+                        <div class="base-input">
+                            <label for="country">Country</label>
 
-                    <div class="base-input">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="user-input" placeholder="+1 (555) 123-4567">
-                    </div>
+                            <select class="dropdown" id="country">
+                                <option value="">Select a country</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="de">Germany</option>
+                                <option value="fr">France</option>
+                            </select>
 
+                        </div>
+
+                        <div class="base-input">
+                            <label>Preferred Contact Method</label>
+
+                            <div class="radio-item">
+                                <input type="radio" id="email" name="contact" value="email">
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div class="radio-item">
+                                <input type="radio" id="phone" name="contact" value="phone">
+                                <label for="phone">Phone</label>
+                            </div>
+
+                            <div class="radio-item">
+                                <input type="radio" id="sms" name="contact" value="sms">
+                                <label for="sms">SMS</label>
+                            </div>
+                        </div>
+
+                        <div class="base-input">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                                <label for="newsletter"> Subscribe to newsletter</label><br>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="agree" name="agree" class="styled-checkbox" value="agree">
+                                <label for="agree"> I agree to the terms and conditions</label><br>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="interactive-inputs">
-                    <h3>Select & Options</h3>
-
-                    <div class="dropdown">
-                        <label for="country">Country</label>
-
-                        <select class="dropdown" id="country">
-                            <option value="">Select a country</option>
-                            <option value="us">United States</option>
-                            <option value="ca">Canada</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="de">Germany</option>
-                            <option value="fr">France</option>
-                        </select>
-
-                    </div>
-
-                    <div class="radio">
-                        <label>Preferred Contact Method</label>
-
-                        <div class="radio-item">
-                            <input type="radio" id="email" name="contact" value="email">
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="radio-item">
-                            <input type="radio" id="phone" name="contact" value="phone">
-                            <label for="phone">Phone</label>
-                        </div>
-
-                        <div class="radio-item">
-                            <input type="radio" id="sms" name="contact" value="sms">
-                            <label for="sms">SMS</label>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
-                            <label for="newsletter"> Subscribe to newsletter</label><br>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="agree" name="agree" class="styled-checkbox" value="agree">
-                            <label for="agree"> I agree to the terms and conditions</label><br>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="message">
+                <div class="base-input">
                     <label for="message">Message</label>
                     <div class="textarea-container">
                         <textarea id="message" class="styled-textarea"
@@ -248,7 +251,7 @@
                     </div>
                 </div>
 
-                <div class="date">
+                <div class="base-input">
                     <label for="date">Date</label>
                     <input type="date" id="date" name="date" class="styled-date">
                 </div>

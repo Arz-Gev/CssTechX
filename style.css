@@ -243,6 +243,22 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.base-input {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+
+
 .slider {
     width: 100%;
     accent-color: #667eea;
